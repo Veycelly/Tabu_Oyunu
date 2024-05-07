@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OyunubaslatActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@drawable/arka_plan">
+
+        <!-- Diğer bileşenler buraya eklenebilir -->
+
+        <ImageView
+            android:id="@+id/imageViewGeriGit3"
+            android:layout_width="67dp"
+            android:layout_height="59dp"
+            app:srcCompat="@drawable/reply128" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="146dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="140dp"
+        android:text="A TAKIMI"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/chipGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="146dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="15dp"
+        android:text="SKOR:3"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/chipGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="91dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginBottom="480dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_dogru"
+        android:layout_width="154dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="325dp"
+        android:backgroundTint="@color/orange"
+        android:text="DOĞRU"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chipGroup"
+        app:strokeColor="#000000"
+        app:strokeWidth="3dp" />
+
+    <Button
+        android:id="@+id/btn_pas"
+        android:layout_width="154dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="325dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/orange"
+        android:text="PAS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chipGroup"
+        app:strokeColor="#000000"
+        app:strokeWidth="3dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="146dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="230dp"
+        android:layout_marginBottom="500dp"
+        android:text="A TAKIMI:10"
+        android:textAlignment="center"
+        android:textColor="#090909"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="146dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="230dp"
+        android:layout_marginBottom="405dp"
+        android:text="B TAKIMI:13"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_tabu"
+        android:layout_width="154dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/orange"
+        android:text="TABU"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chipGroup"
+        app:strokeColor="#000000"
+        app:strokeWidth="3dp" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_width="235dp"
+        android:layout_height="342dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip3"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="YASTIK"
+            android:textAlignment="center"
+            android:textColorLink="#848C31"
+            android:textSize="22sp"
+            app:chipSurfaceColor="#0000FF" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip4"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="Uyku"
+            android:textSize="16sp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip6"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="Yumuşak"
+            android:textSize="16sp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip7"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="Yorgan"
+            android:textSize="16sp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip8"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="Tüy"
+            android:textSize="16sp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip9"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="Yatak"
+            android:textSize="16sp" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

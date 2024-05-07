@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AyarlarActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/arka_plan"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="52dp">
+
+        <!-- Diğer bileşenler buraya eklenebilir -->
+
+        <ImageView
+            android:id="@+id/imageButtonGeriGit"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            app:srcCompat="@drawable/reply128" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="122dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/settingss2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="152dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="43dp"
+        android:text="Ayarlar"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewSure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textViewTabuHakki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="13dp"
+        android:text="Tabu Hakkı"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/skbrTabuHakki"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skbrSure" />
+
+    <TextView
+        android:id="@+id/textViewPasHakki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="7dp"
+        android:text="Pas Hakkı"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/skbrPasHakki"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skbrTabuHakki" />
+
+    <TextView
+        android:id="@+id/textViewSkor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="10dp"
+        android:text="Kazanma Skoru"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/skbrSkor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skbrPasHakki" />
+
+    <TextView
+        android:id="@+id/textViewSes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="15dp"
+        android:text="Ses Seviyesi"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/skbrSes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skbrSkor" />
+
+    <TextView
+        android:id="@+id/textViewSure"
+        android:layout_width="70dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="7dp"
+        android:text="Süre"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/skbrSure"
+        app:layout_constraintStart_toStartOf="@+id/skbrSure"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <SeekBar
+        android:id="@+id/skbrSure"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="8dp"
+        android:thumbTint="#090909"
+        android:tickMarkTint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTabuHakki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSure" />
+
+    <SeekBar
+        android:id="@+id/skbrTabuHakki"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="6dp"
+        android:thumbTint="#000000"
+        android:tickMarkTint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPasHakki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/skbrSure"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTabuHakki" />
+
+    <SeekBar
+        android:id="@+id/skbrPasHakki"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="8dp"
+        android:thumbTint="#000000"
+        android:tickMarkTint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/textViewSkor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/skbrTabuHakki"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPasHakki" />
+
+    <SeekBar
+        android:id="@+id/skbrSkor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="8dp"
+        android:thumbTint="#000000"
+        android:tickMarkTint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/textViewSes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/skbrPasHakki"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSkor" />
+
+    <SeekBar
+        android:id="@+id/skbrSes"
+        android:layout_width="390dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="68dp"
+        android:thumbTint="#000000"
+        android:tickMarkTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/skbrSkor"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSes" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

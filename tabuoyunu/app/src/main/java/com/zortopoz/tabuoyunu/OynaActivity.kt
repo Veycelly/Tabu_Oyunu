@@ -1,5 +1,6 @@
 package com.zortopoz.tabuoyunu
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -15,5 +16,16 @@ class OynaActivity : AppCompatActivity() {
         binding = ActivityOynaBinding.inflate(layoutInflater)
         val oynaMenu = binding.root
         setContentView(oynaMenu)
+
+        binding.button.setOnClickListener {
+            val oyunubaslatMenu = Intent(applicationContext, OyunubaslatActivity::class.java)
+            startActivity(oyunubaslatMenu)
+        }
+
+        binding.imageButtonGeriGit2.setOnClickListener {
+            val anaMenu = Intent(applicationContext,MainActivity::class.java)
+            startActivity(anaMenu)
+        }
+
     }
 }

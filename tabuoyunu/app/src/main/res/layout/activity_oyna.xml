@@ -7,16 +7,79 @@
     android:layout_height="match_parent"
     tools:context=".OynaActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="140dp"
-        android:layout_marginStart="59dp"
-        android:layout_marginTop="225dp"
-        android:layout_marginEnd="59dp"
-        android:text="Oyuna Hoşgeldin Götveren"
-        android:textSize="34sp"
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@drawable/arka_plan">
+
+        <!-- Diğer bileşenler buraya eklenebilir -->
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="204dp"
+        android:layout_height="198dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/plainTakim"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/plainTakim"
+        android:layout_width="220dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:hint="Birinci Takım"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="220dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:hint="İkinci Takım"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="220dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/orange"
+        android:text="OYUNU BAŞLAT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonGeriGit2"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/plainTakim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.008"
+        app:srcCompat="@drawable/reply128" />
 </androidx.constraintlayout.widget.ConstraintLayout>
